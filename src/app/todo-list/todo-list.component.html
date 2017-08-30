@@ -1,0 +1,13 @@
+<div class="todo--container">
+  <h1>ToDo List</h1>
+  <ul *ngFor="let item of todoList">
+    <li>
+      <input type="text" placeholder="New todo item" [(ngModel)]="item.title">
+      <button class="button--primary">Save</button>
+      <button class="button--danger">Delete</button>
+    </li>
+  </ul>
+  <footer class="todo--footer">
+    <button class="button--secondary" (click)="addRow()">Add ToDo Item</button>
+  </footer>
+</div>
