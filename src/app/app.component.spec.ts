@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
@@ -13,6 +14,7 @@ describe('AppComponent', () => {
         TodoListComponent
       ],
       imports: [
+        HttpModule,
         FormsModule
       ],
       providers: [
